@@ -1,0 +1,5 @@
+/Camera_Examples/
+/Motion_Control_Examples/
+/LISA_env/
+__pycache__/
+*.py[cod]
