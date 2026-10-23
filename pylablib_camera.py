@@ -2,6 +2,7 @@ import pylablib as pll
 from pylablib.devices import Thorlabs as tl
 import cv2
 import time
+import matplotlib.pyplot as plt
 
 
 cam = tl.ThorlabsTLCamera("18009")
@@ -14,12 +15,19 @@ print(serials)
 #time.sleep(15)
 #print("slept")
 
-cam.set_exposure(10E-3)
+cam.set_exposure(1)
 
 image = cam.snap(timeout=15)
 cam.close()
 
+
+
 cv2.imwrite("pic.png", image)
+print("Image taken")
+#plt.imshow(image)
+plt.plot(image.flatten())
+#plt.colorbar()
+plt.show()
 
 #for i in range(10):
 #    plt.imshow(images[i])
