@@ -4,3 +4,4 @@
 /dlls/
 __pycache__/
 *.py[cod]
+/Images/

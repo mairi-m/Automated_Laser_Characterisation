@@ -1,3 +1,7 @@
+# Author: Claude (AI)
+# This code was written by claude. Some bits were used (i think) in camera_aquisition.py.
+# This code contains debugging code from when the camara was very slow since it wsa not recieving enough power. It rescales the image to make it show with cv2. This is not desirable.
+
 
 import numpy as np
 import os

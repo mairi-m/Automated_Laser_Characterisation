@@ -15,19 +15,24 @@ print(serials)
 #time.sleep(15)
 #print("slept")
 
-cam.set_exposure(1)
+cam.set_exposure(1E-3)
 
 image = cam.snap(timeout=15)
+
+print(image)
 cam.close()
 
+plt.imshow(image)
+plt.show()
 
-
+"""
 cv2.imwrite("pic.png", image)
 print("Image taken")
 #plt.imshow(image)
 plt.plot(image.flatten())
 #plt.colorbar()
 plt.show()
+"""
 
 #for i in range(10):
 #    plt.imshow(images[i])

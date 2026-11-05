@@ -1,3 +1,8 @@
+# Author: Thorlabs
+# This code is taken from the thorlabs example repository. Some of this code was used in camera_aquisition.py. I think it rescales the image to make it show with cv2. This is not desirable.
+
+
+
 import numpy as np
 import os
 import cv2
